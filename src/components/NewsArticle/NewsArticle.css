@@ -1,0 +1,10 @@
+img {
+    width: 90%;
+}
+
+.news-article {
+    border: solid;
+    border-radius: 1rem;
+    width: 30%;
+    margin: 1rem;
+}

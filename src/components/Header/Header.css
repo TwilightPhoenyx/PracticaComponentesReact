@@ -1,0 +1,11 @@
+.header {
+    border: solid;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

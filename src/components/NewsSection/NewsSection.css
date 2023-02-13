@@ -1,0 +1,11 @@
+h2 {
+    text-align: center;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
