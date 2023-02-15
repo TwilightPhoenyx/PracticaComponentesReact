@@ -1,0 +1,11 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.login input, .login p {
+    margin: 0.5rem;
+    max-width: 10rem;
+    width: 10rem;
+}

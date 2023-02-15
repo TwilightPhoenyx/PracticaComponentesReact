@@ -1,13 +1,15 @@
 import Header from "./components/Header/Header";
-import NewsSection from "./components/NewsSection/NewsSection";
+import NavMenu from "./components/NavMenu/NavMenu";
+import FrontPage from "./views/FrontPage";
 
 function App() {
   return (
     <>
     <Header/>
-    <NewsSection titleSection="Últimas Noticias"/>
+    <NavMenu/>
     </>
    );
 }
 
 export default App;
+

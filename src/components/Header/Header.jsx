@@ -7,7 +7,6 @@ function Header () {
         <>
             <h1 className="header">Gamer News</h1>
             <div className="menus">
-                <NavMenu/>
                 <Login/>
             </div>
         </>

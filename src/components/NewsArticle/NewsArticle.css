@@ -2,6 +2,10 @@ img {
     width: 90%;
 }
 
+h3 {
+    margin: 0.5rem;
+}
+
 .news-article {
     border: solid;
     border-radius: 1rem;
