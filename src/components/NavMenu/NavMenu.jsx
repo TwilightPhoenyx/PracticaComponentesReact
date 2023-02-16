@@ -2,10 +2,11 @@ import { useState } from "react"
 import FrontPage from "../../views/FrontPage"
 import LatestNewsPage from "../../views/LatestNewsPage"
 import ReviewsPage from "../../views/ReviewsPage"
+import placeholderPhoto from "../../images/gamepadicon.png"
 
 function NavMenu () {
 
-    const allNews = [
+    const news = [
         {
             title: "Nuevo Juego a la venta",
             content: "Sale nuevo juego revolucionario que pilla al munod por sorpresa",
@@ -79,9 +80,9 @@ function handlerClickNav(event){
                 </ul>
             </nav>
 
-            {view === "frontPage" && <FrontPage/>}
-            {view === "latestNewsPage" && <LatestNewsPage/>}
-            {view === "reviewsPage" && <ReviewsPage/>}
+            {view === "frontPage" && <FrontPage allNews={news}/>}
+            {view === "latestNewsPage" && <LatestNewsPage allNews={news}/>}
+            {view === "reviewsPage" && <ReviewsPage allNews={news}/>}
         </>
 
     )

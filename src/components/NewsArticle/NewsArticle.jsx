@@ -10,7 +10,6 @@ function NewsArticle(props) {
                 <h3>{props.title}</h3>
                 <img src={props.image} alt="news photo" />
                 <p>{props.content}</p>
-                <button id="frontPage">proxy</button>
             </article>
         </>
     )

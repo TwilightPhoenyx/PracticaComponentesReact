@@ -1,28 +1,12 @@
 import NewsSection from "../components/NewsSection/NewsSection";
 import placeholderPhoto from "../images/gamepadicon.png"
 
-function  LatestNewsPage() {
+function  LatestNewsPage(props) {
 
-    /*const news = [
-        {
-            title: "Ultimas noticias de gaming",
-            content: "Info de toticia e ultima hora",
-            image: placeholderPhoto
-        },
-        {
-            title: "Anunciado Skyrim II",
-            content: "Los fans estan soprendidos",
-            image: placeholderPhoto
-        },
-        {
-            title: "Cancelado juego indie",
-            content: "El diseñador y porgramador lider exlica el porque",
-            image: placeholderPhoto
-        }
-    ]*/
+    const filteredNews = props.allNews.filter(news => news.section === "latestNews")
 
     return(
-        <NewsSection titleSection="Últimas Noticias" sectionNews={news}/>
+        <NewsSection titleSection="Últimas Noticias" sectionNews={filteredNews}/>
     )
 }
 
