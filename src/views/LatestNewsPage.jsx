@@ -1,5 +1,4 @@
 import NewsSection from "../components/NewsSection/NewsSection";
-import placeholderPhoto from "../images/gamepadicon.png"
 
 function  LatestNewsPage(props) {
 

@@ -1,0 +1,16 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.formulario > * {
+    padding: 0.2rem;
+}
+
+.formulario > button {
+    width: 10rem;
+}
