@@ -2,7 +2,7 @@ import NewsSection from "../components/NewsSection/NewsSection";
 import placeholderPhoto from "../images/gamepadicon.png"
 function FrontPage(props) {
 
-    const news = [
+    /*const news = [
         {
             title: "Nuevo Juego a la venta",
             content: "Sale nuevo juego revolucionario que pilla al munod por sorpresa",
@@ -18,7 +18,7 @@ function FrontPage(props) {
             content: "Velkana, originario del spinoff MH Icebrone ha llegado al fin a Sunbreak",
             image: placeholderPhoto
         }
-    ]
+    ]*/
 
     return(
         <NewsSection titleSection="Noticias Destacadas" sectionNews={news}/>

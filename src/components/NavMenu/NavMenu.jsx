@@ -1,8 +1,68 @@
 import { useState } from "react"
 import FrontPage from "../../views/FrontPage"
 import LatestNewsPage from "../../views/LatestNewsPage"
+import ReviewsPage from "../../views/ReviewsPage"
 
 function NavMenu () {
+
+    const allNews = [
+        {
+            title: "Nuevo Juego a la venta",
+            content: "Sale nuevo juego revolucionario que pilla al munod por sorpresa",
+            image: placeholderPhoto,
+            section: "frontPage"
+        },
+        {
+            title: "No Man Sky sigue mejorando",
+            content: "A pesar de su rocoso lanzamiento, el juego se sigue actualizando para mejor",
+            image: placeholderPhoto,
+            section: "frontPage"
+        },
+        {
+            title: "La Title update 4 de Sunbreak introduce a Velkana",
+            content: "Velkana, originario del spinoff MH Icebrone ha llegado al fin a Sunbreak",
+            image: placeholderPhoto,
+            section: "frontPage"
+        },
+        {
+            title: "Ultimas noticias de gaming",
+            content: "Info de toticia e ultima hora",
+            image: placeholderPhoto,
+            section: "latestNews"
+        },
+        {
+            title: "Anunciado Skyrim II",
+            content: "Los fans estan soprendidos",
+            image: placeholderPhoto,
+            section: "latestNews"
+        },
+        {
+            title: "Cancelado juego indie",
+            content: "El diseñador y porgramador lider exlica el porque",
+            image: placeholderPhoto,
+            section: "latestNews"
+        },
+        {
+            title: "Skyrirm Switch, un ort sin novedades",
+            content: "Same old same old",
+            image: placeholderPhoto,
+            section: "reviews"
+        },
+        {
+            title: "Pokémon Scarlet/Violet",
+            content: "Historia interesante rodeada de inaceptables bugs",
+            image: placeholderPhoto,
+            section: "reviews"
+        },
+        {
+            title: "Deltarune",
+            content: "Intrigante jeugo indie del creador de Undertale",
+            image: placeholderPhoto,
+            section: "reviews"
+        }
+    ]
+
+
 
 const [view, setView] = useState("frontPage")
 function handlerClickNav(event){
@@ -21,7 +81,7 @@ function handlerClickNav(event){
 
             {view === "frontPage" && <FrontPage/>}
             {view === "latestNewsPage" && <LatestNewsPage/>}
-            {view === "reviewsPage" && <p>Mostrando pagina reviews</p>}
+            {view === "reviewsPage" && <ReviewsPage/>}
         </>
 
     )
