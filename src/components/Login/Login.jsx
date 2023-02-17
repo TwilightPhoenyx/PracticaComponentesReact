@@ -19,9 +19,7 @@ function Login() {
         <div className={styles.login}>
             <input type="text" name="userName" placeholder="Nombre de Usuario" onInput={handlerUserName}></input>
             <input type="password" name="password" placeholder="Contraseña" onInput={handlerPassword}></input>
-
-            <p>Tu eres: {userName}</p>
-            <p>Tu contraseña es: {password}</p>
+            <button>Inicia sesión</button>
         </div>
     </>
     );

@@ -1,13 +1,17 @@
 import Header from "./components/Header/Header";
 import NavMenu from "./components/NavMenu/NavMenu";
-import FrontPage from "./views/FrontPage";
+import styles from "./App.css"
 
 function App() {
   return (
-    <>
-    <Header/>
-    <NavMenu/>
-    </>
+  
+    <div className="container">
+      <Header/>
+      <NavMenu/>
+      <footer>
+        <p>Aviso Legal</p>
+      </footer>
+    </div>
    );
 }
 

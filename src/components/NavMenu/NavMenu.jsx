@@ -3,7 +3,8 @@ import FrontPage from "../../views/FrontPage"
 import LatestNewsPage from "../../views/LatestNewsPage"
 import ReviewsPage from "../../views/ReviewsPage"
 import placeholderPhoto from "../../images/gamepadicon.png"
-import InsertNews from "../../views/InsertNews"
+import InsertNews from "../../views/InsertNews/InsertNews"
+import styles from "./NavMenu.css"
 
 function NavMenu () {
 
@@ -75,7 +76,7 @@ function handlerClickNav(event){
 
     return (
         <>
-            <nav>
+            <nav className="nav-menu">
                 <ul>
                     <li><a id="frontPage" onClick={handlerClickNav}>Portada</a></li>
                     <li><a id="latestNewsPage" onClick={handlerClickNav}>Novedades</a></li>
@@ -84,10 +85,12 @@ function handlerClickNav(event){
                 </ul>
             </nav>
 
-            {view === "frontPage" && <FrontPage allNews={news}/>}
-            {view === "latestNewsPage" && <LatestNewsPage allNews={news}/>}
-            {view === "reviewsPage" && <ReviewsPage allNews={news}/>}
-            {view === "insertNewsPage" && <InsertNews allNews={news}/>}
+            <main>
+                {view === "frontPage" && <FrontPage allNews={news}/>}
+                {view === "latestNewsPage" && <LatestNewsPage allNews={news}/>}
+                {view === "reviewsPage" && <ReviewsPage allNews={news}/>}
+                {view === "insertNewsPage" && <InsertNews allNews={news}/>}
+            </main>
         </>
 
     )

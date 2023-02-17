@@ -1,0 +1,54 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    background-color: rgba(0,0,0,.57);
+    border: solid;
+    border-color: goldenrod;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.formulario legend, .formulario >label {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.formulario label {
+    display: flex;
+    margin-top: 1em;
+}
+
+.formulario input[type="text"] {
+    flex-grow: 1;
+    margin-left: 1em;
+    width:15rem;
+    justify-self: end;
+
+}
+
+.formulario button {
+    margin: 2em;
+    align-self: center;
+    width: 8rem;
+}
+
+.formulario fieldset {
+    margin: 1em;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.label-radio {
+    font-weight: lighter;
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 1rem;
+}

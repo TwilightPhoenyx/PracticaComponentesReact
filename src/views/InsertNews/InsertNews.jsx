@@ -1,10 +1,10 @@
 import { useState } from "react";
-import placeholderPhoto from "../images/gamepadicon.png"
+import placeholderPhoto from "../../images/gamepadicon.png"
 import styles from "./InsertNews.css"
-import NavMenu from "../components/NavMenu/NavMenu";
-import FrontPage from "./FrontPage";
-import LatestNewsPage from "./LatestNewsPage";
-import ReviewsPage from "./ReviewsPage";
+import NavMenu from "../../components/NavMenu/NavMenu";
+import FrontPage from "../FrontPage";
+import LatestNewsPage from "../LatestNewsPage";
+import ReviewsPage from "../ReviewsPage";
 
 function InsertNews (props) {
 
@@ -45,31 +45,32 @@ function InsertNews (props) {
  
 
     return(
+
         <div className="formulario">
-            <label>
-                Pon titulo noticia
+            <h2>Introduce una nueva noticia</h2>
+            <label>Titular:
                 <input type="text" name="title" onInput={handlerNewsTitle} />
             </label>
-            <label>
-                Escribe el contenido
-                <textarea name="content" cols="30" rows="10" onInput={handlerNewsContent}></textarea>
-            </label>
-                <label>
+            <label for="content">Contenido de noticia:.</label>
+            <textarea name="content" cols="30" rows="10" onInput={handlerNewsContent}></textarea>
+            <fieldset>
+                <legend>Seleccioa su sección:</legend>
+                <label class="label-radio">
                 <input type="radio" name="section" value="fronPage" defaultChecked onClick={handlerNewsSection}/>
-                    Enviar a portada
+                    Enviar a Portada
                 </label>
-
-                <label>
+                <label class="label-radio">
                 <input type="radio" name="section" value="latestNews" onClick={handlerNewsSection}/>
-                    Enviar a ultimas noticias
+                    Enviar a Novedades
                 </label>
-
-                <label>
+                <label class="label-radio">
                 <input type="radio" name="section" value="reviews" onClick={handlerNewsSection}/>
-                    Enviar a reviews
+                    Enviar a Reviews
                 </label>
+                </fieldset>
 
                 <button onClick={handlerNews}>Añadir</button>
+
         </div>
    ) 
 }

@@ -1,11 +1,21 @@
 .login {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
+    border: solid;
+    border-color: goldenrod;
+    background-color: rgb(19, 19, 19);
+    padding: 0.2rem;
+    justify-content: center;
 }
 
-.login input, .login p {
-    margin: 0.5rem;
+.login input {
+    margin-bottom: 0.5rem;
     max-width: 10rem;
     width: 10rem;
+}
+
+.login button {
+    justify-self: center;
+    align-self: center;
 }

@@ -5,6 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color:whitesmoke;
+  background-image: url(./images/consolebackground.jpg);
+}
+
+nav {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+main {
+  grid-column: 1/4;
+  grid-row: 3/5;
+}
+
+footer {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  display: grid;
+  margin-top: 3rem;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  background-color: black;
+  font-family: sans-serif;
+  border: solid;
+  border-radius: 4rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  background-color: goldenrod;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 0.5rem;
+} 
+
+footer > p {
+  font-family: serif;
+  border:solid;
+  border-width: 0.1rem;
+  text-align: center;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  background-color: rgb(19, 19, 19);
+  align-self: center;
+  padding: 2rem;
 }
 
 code {
