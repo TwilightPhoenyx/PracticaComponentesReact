@@ -1,6 +1,8 @@
-function SingUp() {
+import styles from "./SignUp.css"
+
+function SignUp() {
     return(
-        <div class="container-form">
+        <div className="register-form">
             <h2>Registro</h2>
             <label>Nombre de Usuario:
                 <input type="text" name="UserName" placeholder="Nombre de usuario"/>
@@ -18,25 +20,25 @@ function SingUp() {
                 <input type="password" name="Password"/>
             </label>
 
-            <label class="label-resaltada">Autorizo que se me manden e-mails de publicidad
+            <label className="radio-label">Autorizo que se me manden e-mails de publicidad
                 <input type="checkbox" name="consent" value="allowSendMails"/>
             </label>
 
-            <label class="label-resaltada">Autorizo que usen mis datos con fines comerciales
+            <label class="radio-label">Autorizo que usen mis datos con fines comerciales
                 <input type="checkbox" name="consent" value="allowDataUse"/>
             </label>
 
             <fieldset>
                 <legend>Configuración de cookies</legend>
-                <label class="label-resaltada">
+                <label class="radio-label">
                     <input type="radio" name="cookies" value="all" defaultChecked/>
                     Acepto todas las cookies
                 </label>
-                <label class="label-resaltada">
+                <label class="radio-label">
                     <input type="radio" name="cookies" value="requiered"/>
                     Acepto solo cookies recomendadas
                 </label>
-                <label class="label-resaltada">
+                <label class="radio-label">
                     <input type="radio" name="cookies" value="none"/>
                     No acepto ninguna cookie
                 </label>
@@ -48,4 +50,4 @@ function SingUp() {
 )
 }
 
-export default SingUp
+export default SignUp

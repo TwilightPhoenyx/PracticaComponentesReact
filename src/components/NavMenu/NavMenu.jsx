@@ -5,6 +5,7 @@ import ReviewsPage from "../../views/ReviewsPage"
 import placeholderPhoto from "../../images/gamepadicon.png"
 import InsertNews from "../../views/InsertNews/InsertNews"
 import styles from "./NavMenu.css"
+import SignUp from "../../views/SignUp/SignUp"
 
 function NavMenu () {
 
@@ -81,6 +82,7 @@ function handlerClickNav(event){
                     <li><a id="frontPage" onClick={handlerClickNav}>Portada</a></li>
                     <li><a id="latestNewsPage" onClick={handlerClickNav}>Novedades</a></li>
                     <li><a id="reviewsPage" onClick={handlerClickNav}>Reviews</a></li>
+                    <li><a id="signUpPage" onClick={handlerClickNav}>Menu de registro</a></li>
                     <li><a id="insertNewsPage" onClick={handlerClickNav}>Añadir noticia</a></li>
                 </ul>
             </nav>
@@ -89,6 +91,7 @@ function handlerClickNav(event){
                 {view === "frontPage" && <FrontPage allNews={news}/>}
                 {view === "latestNewsPage" && <LatestNewsPage allNews={news}/>}
                 {view === "reviewsPage" && <ReviewsPage allNews={news}/>}
+                {view === "signUpPage" && <SignUp/>}
                 {view === "insertNewsPage" && <InsertNews allNews={news}/>}
             </main>
         </>

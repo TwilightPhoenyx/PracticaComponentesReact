@@ -1,0 +1,53 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    background-color: rgba(0,0,0,.57);
+    border: solid;
+    border-color: goldenrod;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.register-form legend, .register-form label {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.register-form label {
+    display: flex;
+    margin-top: 1em;
+}
+
+.register-form input[type="text"], .register-form input[type="email"], .register-form input[type="password"] {
+    flex-grow: 1;
+    margin-left: 1em;
+    width:15rem;
+    justify-self: end;
+
+}
+
+.register-form button {
+    margin: 2em;
+    align-self: center;
+}
+
+.register-form fieldset {
+    margin: 1em;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.radio-label {
+    font-weight: lighter;
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 1rem;
+}
